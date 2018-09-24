@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var nums = [1, 2, 3, 4, 5];
+        var nums1 = [1, 2, 3, 4, 5];
+
+        function  myPop(arrays) {
+            //获得数组的长度
+            var length=arrays.length;
+            //把最后的值清空
+            arrays[length-1]=null;
+            //更改数组的长度
+            arrays.length--;
+            return arrays;
+        }
+
+        function  myShift(arrays) {
+            var length=arrays.length;
+            for(var i=0;i<length;i++)
+            arrays[i]=arrays[i+1];
+            arrays[length-1]=null;
+            arrays.length--;
+            return arrays;
+        }
+
+        console.log(myPop(nums));
+        console.log(myShift(nums1).toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

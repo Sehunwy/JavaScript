@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function  Order(ProNumber,price,play) {
+            this.price = price;
+            this.ProNumber = ProNumber;
+            this.play = play; //0没有支付，1支付
+        }
+        //当前的订单列表用于存放订单
+        var oderlist = [];
+
+        for(var i=0;i<10;i++) {
+
+            var random = Math.floor(Math.random()*2);
+            var buffer = new Order(i,9.9,random);
+            //oderlist[i] = buffer;
+            oderlist.push(buffer);
+        }
+
+        oderlist.forEach(function (order) {
+            if(order.play==1) {
+                console.log(order.ProNumber+"已经付款了")；
+            }
+        })
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

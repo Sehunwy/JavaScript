@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03some</title>
+    <script src="some.js"></script>
+    <script>
+
+        var nums = [1,2,3,4,5,6,7,8,9,10];
+
+        var isTrue = mySome(nums,function(item){
+            console.log(item);
+            //var isTrue = item%2==0;
+            var isTrue = item>7;
+            return isTrue;
+        });
+        console.log(isTrue);
+    </script>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var nums = [2,4,3,6,8,10];
+
+        function MyEvery(arrays,call) {
+            var length = arrays.length;
+            for(var i=0;i<length;i++) {
+                var buffer=arrays[i];
+                call(buffer);
+                if(!(buffer%2==0)) {
+                    break;
+                }
+            }
+        }
+        var EveryFunction = function(item) {
+            console.log(item);
+        }
+        MyEvery(nums,EveryFunction);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var cisDept = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+
+
+
+        function mySplice(data,start,length) {
+            var buffer=[];
+            var index=0;
+
+            for(var i=start;i<start+length;i++)
+            {
+                buffer[index]=data[i];
+                index++;
+            }
+            return buffer;
+        }
+
+        var buffer=mySplice(cisDept,2,3);
+        console.log(buffer.toString());
+
+        var data1=cisDept.splice(2,3);
+        console.log(data1.toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

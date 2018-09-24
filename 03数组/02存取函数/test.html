@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var names = ["David", "Mike", "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+
+        var name = "Mike";
+
+        function myLastIndexOf(datas,item) {
+            var length=datas.length;
+            var index=-1;
+            for(var i=length-1;i>=0;i--) {
+                if(datas[i]==item) {
+                    index=i;
+                    break;
+                }
+            }
+            return index;
+        }
+        var lastIndex= myLastIndexOf(names,name);
+        console.log(lastIndex);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

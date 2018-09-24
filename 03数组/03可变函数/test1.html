@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var nums = [1, 2, 3, 4, 5];
+       // nums.push(20);
+
+        function myPush(datas,num) {
+            var length = datas.length;
+            datas[length]=num;
+            return datas;
+        }
+
+        var buffer=myPush(nums,20);
+        console.log(buffer.toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

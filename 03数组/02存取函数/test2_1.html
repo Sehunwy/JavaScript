@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var cisDept = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+
+        function mySplice(arrays,start,size) {
+            if(start<0)
+                return;
+            var buffer = [];
+            var index = 0;
+            for(var i=start;i<start+size;i++) {
+                buffer[index]=arrays[i];
+                index++;
+            }
+            return buffer;
+        }
+
+        var nowArry=mySplice(cisDept,1,2);
+        console.log(nowArry.toString());
+    </script>
+</head>
+<body>
+
+</body>
+</html>

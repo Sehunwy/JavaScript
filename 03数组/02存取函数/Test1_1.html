@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var names = ["David", "Mike","Clayton",  "Cynthia", "Raymond", "Clayton", "Mike", "Jennifer"];
+
+        var length = names.length;
+        var index;
+        var index1;
+        for(var i=0;i<length;i++) {
+            if(names[i]=='Cynthia') {
+                index = i;
+                break;
+            }
+        }
+
+        for (var i=length-1;i>=0;i--) {
+            if(names[i]=='Clayton') {
+                index1 = i;
+                break;
+            }
+        }
+        console.log(index);
+        console.log(index1);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

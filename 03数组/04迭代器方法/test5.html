@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var nums = [1,2,3,4,5,6,7,8,9,10];
+        function MyFilter(arrays) {
+            //创建数组
+            var buffer = [];
+            //获得数组的长度
+            var length = arrays.length;
+            //遍历数组
+            for(var i=0;i<length;i++) {
+                //取出数据
+                var value = arrays[i];
+                //满足条件后才把当前数据放到新的数组中
+                if(value%2==0) {
+                    buffer.push(value);
+                }
+            }
+            return buffer;
+        }
+
+        console.log(MyFilter(nums));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

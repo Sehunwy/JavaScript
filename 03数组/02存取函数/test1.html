@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var cisDept = ["Mike", "Clayton", "Terrill", "Danny", "Jennifer"];
+        var dmpDept = ["Raymond", "Cynthia", "Bryan"];
+
+        function myConcat(data1,data2) {
+            var length1=data1.length;
+            var length2=data2.length;
+            for(var i=0;i<length2;i++) {
+                data1[i+length1]=data2[i];
+            }
+            return data1;
+        }
+
+        var buffer = myConcat(cisDept,dmpDept);
+
+        console.log(buffer);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

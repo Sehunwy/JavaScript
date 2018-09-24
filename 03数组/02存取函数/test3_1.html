@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var sentence="   the     quick brown  for jumped over the lazy dog   ";
+
+        //获得当前字符串的长度
+        var length = sentence.length;
+
+            //去掉字符串前面的空格
+        for(var i=0;i<length;i++) {
+            if(sentence[i]!=' ') {
+                sentence = sentence.substring(i,length);
+                break;
+            }
+        }
+
+        //去掉字符串前面空格的字符串长度
+        length=sentence.length;
+        //去掉字符串后面的空格
+        for(var i=length-1;i>=0;i--) {
+            if(sentence[i]!=' ') {
+                sentence = sentence.substring(0,i+1);
+                break;
+            }
+        }
+
+        length=sentence.length;
+        //去掉字符串中间的空格
+        for(var i=0;i<length;i++) {
+            if(sentence[i]==' ') {
+                if(sentence[i+1]==' ') {
+                    var buffer1 = sentence.substring(0,i);
+                    var buffer2 = sentence.substring(i+1,sentence.length);
+                    sentence = buffer1+buffer2;
+                    i--;
+                }
+            }
+        }
+
+        console.log(sentence);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

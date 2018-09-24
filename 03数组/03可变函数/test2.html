@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var nums = [1, 2, 3, 4, 5];
+        //nums.unshift(20);
+
+        //以倒序的方式遍历数组，
+        // 把最后的数据往后面移动一位
+        function myUnshift(arrays,data) {
+            // var nums=[];
+            // var index=1;
+            // var length = arrays.length;
+            // for(var i=0;i<length;i++) {
+            //     nums[index]=arrays[i];
+            //     index++;
+            // }
+            // nums[0]=data;
+            // return nums;
+
+
+            var length=arrays.length;
+            for (var i=length-1;i>=0;i--) {
+                arrays[i+1]=arrays[i];
+            }
+            arrays[0]=data;
+            return arrays;
+        }
+
+        var buffer = myUnshift(nums,10);
+        console.log(buffer);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
